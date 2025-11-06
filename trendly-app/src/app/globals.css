@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #ff3e6c;
+  --color-primary-pressed: #e1355f;
+  --color-secondary: #4f46e5;
+  --color-surface-primary: #ffffff;
+  --color-surface-muted: #f7f7f8;
+  --color-surface-deep: #111111;
+  --color-outline: #ececee;
+  --color-text-primary: #111111;
+  --color-text-secondary: #6b7280;
+  --color-text-inverse: #ffffff;
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --shadow-elevated: 0 16px 32px rgba(17, 17, 17, 0.08);
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-surface-primary: var(--color-surface-primary);
+  --color-surface-muted: var(--color-surface-muted);
+  --color-surface-deep: var(--color-surface-deep);
+  --color-outline: var(--color-outline);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-inverse: var(--color-text-inverse);
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  --color-error: var(--color-error);
+  --shadow-elevated: var(--shadow-elevated);
+  --radius-xs: var(--radius-xs);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --font-sans: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", sans-serif;
+}
+
+body {
+  background: var(--color-surface-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}
